@@ -47,3 +47,23 @@ Days Completed: 2 (12/2)
 
 *Solution*
 > For each row, first check if it is valid as is using the method in Part One, if it is invalid, brute force through, checking each combination of array with one value removed, if a valid one is found, return true, else false
+
+## Day Three
+> Language: Python
+
+:> Finished 12/3/2024 7:03 AM EST
+
+> Finished Both Parts
+
+### Problem Summary
+**Part One**
+> Given a set of data, find valid commands in the string where a valid string is in the form mul(num, num2) where num and num2 are 3 or less digits. Find the sum of each mul command's output
+
+*Solution*
+> Regex through the input data to find each instance of a valid mul command, perform the multiplication and sum the products
+
+**Part Two**
+> Same as above but now do() and don't() are valid commands, do enables all following mul commands, while don't disables them
+
+*Solution*
+> Same as Part One, except also find do and don't commands, set an enabled variable depending on which, and then if it is a mul command add the outcome if enabled, ignore if disabled
